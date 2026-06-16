@@ -1,0 +1,149 @@
+/* === GLOBAL PAGE STYLING === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    margin: 0;
+    height: 100vh;
+    color: #fff;
+}
+
+/* === LOGIN PAGE === */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: left;
+}
+
+h2 {
+    color: #fff;
+    font-size:40px;
+    margin-top: -40px;
+    text-align:center;
+   
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ffebcd;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #FF6B6B;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.container button:hover {
+    background: #FF3B3B;
+}
+
+/* === QUIZ PAGE === */
+.quiz-container {
+    position: relative;
+    background: rgba(255, 255, 0, 0.0);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0);
+    width: 450px;
+    min-height: 420px;
+    color: #000;
+    text-align: left;
+    margin-right: 990px;  /* same as login alignment */
+    margin-top: 80px;
+}
+
+/* Hide all questions except current */
+.question {
+    display: none;
+}
+
+/* Question text */
+.quiz-container p {
+    font-weight: bold;
+    margin-bottom:10px;
+    margin-top:67px;
+    color: #000;
+    font-size: 25px;
+    
+}
+
+/* Radio button styling */
+.quiz-container label {
+    display: block;
+    margin: 0 190px;
+    font-size: 19px;
+    color: #222;
+}
+
+.quiz-container input[type="radio"] {
+    transform: scale(1.2);
+    margin-left: -160px;
+}
+
+/* === BUTTON STYLING === */
+.button-container {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 115%;
+}
+
+/* Common button style */
+#prevBtn, #nextBtn, #submitBtn {
+    position: absolute;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Bottom-left (Previous) */
+#prevBtn {
+    left: 30px;
+    bottom: 10px;
+    background-color: #FF6B6B;
+}
+#prevBtn:hover {
+    background-color: #FF3B3B;
+}
+
+/* Bottom-right (Next / Submit) */
+#nextBtn, #submitBtn {
+    right: 30px;
+    bottom: 10px;
+    background-color: #007bff;
+}
+#nextBtn:hover, #submitBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Submit button green */
+#submitBtn {
+    background-color: #28a745;
+}
+#submitBtn:hover {
+    background-color: #1e7e34;
+}
